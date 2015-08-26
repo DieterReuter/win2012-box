@@ -5,7 +5,8 @@ iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.p
 choco install -y git -params "/GitAndUnixToolsOnPath"
 
 # install SublimeText2 editor
-choco install -y SublimeText2
+choco install -y sublimetext2
+choco install -y sublimetext2.powershellalias
 
 # enable UAC
 Set-ItemProperty -Path HKLM:\Software\Microsoft\Windows\CurrentVersion\policies\system -Name EnableLUA -Value 1

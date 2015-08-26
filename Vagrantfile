@@ -18,4 +18,6 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.provision "shell", path: "scripts/provision.ps1", privileged: false
+  config.vm.provision "shell", path: "scripts/install-hyper-v.ps1", privileged: false
+  config.vm.provision "reload"
 end
